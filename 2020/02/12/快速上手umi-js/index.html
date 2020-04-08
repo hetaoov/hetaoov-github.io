@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="shell,lamp,">
+  <meta name="keywords" content="JS,React,umi.js,">
 
 
 
@@ -81,18 +81,22 @@
 
 
 
-<meta name="description" content="因为公司的新的业务需要安装 PHP7 以上的版本，但是如果自己直接使用源码安装的话，可能会有一些依赖忘记安装，或者版本不兼容的问题。而且，使用 百度 搜索出来的又千篇一律抄来抄去根本不具有什么参考价值。所以，我想到了使用别人写好的shell来安装。经过别人的推荐我知道了 lamp.sh lamp.sh 是一款使用 Linux Shell 编写的可以在多种系统上运行的 LAMP(Linux + Ap">
-<meta name="keywords" content="shell,lamp">
+<meta name="description" content="学习 UmiJS 也有一段时间了，终于了解了大概的用法，这里做个记录，也给刚入门的朋友提供一点参考。 知识图谱：快速上手 UmiJS 实操必要知识   这里我们需要一定的 typescript 和 ES6 的知识 快速上手下载umijs参考官网的说明 环境准备 这里我们假设您本地已经安装好了nodejs 等环境。我们已 AntD Admin 为演示用例 1.下载项目代码：12git clone h">
+<meta name="keywords" content="JS,React,umi.js">
 <meta property="og:type" content="article">
-<meta property="og:title" content="修改lamp.sh使之可以支持多版本PHP">
-<meta property="og:url" content="https://hetaoov.github.io/2020/01/05/修改lamp-sh使之可以支持多版本php/index.html">
+<meta property="og:title" content="快速上手umi.js">
+<meta property="og:url" content="https://hetaoov.github.io/2020/02/12/快速上手umi-js/index.html">
 <meta property="og:site_name" content="猛子的博客">
-<meta property="og:description" content="因为公司的新的业务需要安装 PHP7 以上的版本，但是如果自己直接使用源码安装的话，可能会有一些依赖忘记安装，或者版本不兼容的问题。而且，使用 百度 搜索出来的又千篇一律抄来抄去根本不具有什么参考价值。所以，我想到了使用别人写好的shell来安装。经过别人的推荐我知道了 lamp.sh lamp.sh 是一款使用 Linux Shell 编写的可以在多种系统上运行的 LAMP(Linux + Ap">
+<meta property="og:description" content="学习 UmiJS 也有一段时间了，终于了解了大概的用法，这里做个记录，也给刚入门的朋友提供一点参考。 知识图谱：快速上手 UmiJS 实操必要知识   这里我们需要一定的 typescript 和 ES6 的知识 快速上手下载umijs参考官网的说明 环境准备 这里我们假设您本地已经安装好了nodejs 等环境。我们已 AntD Admin 为演示用例 1.下载项目代码：12git clone h">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-01-05T09:06:30.015Z">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/12/17Xq56.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/12/1H9pqg.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/12/1H9Gz6.png">
+<meta property="og:updated_time" content="2020-02-12T07:09:18.248Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="修改lamp.sh使之可以支持多版本PHP">
-<meta name="twitter:description" content="因为公司的新的业务需要安装 PHP7 以上的版本，但是如果自己直接使用源码安装的话，可能会有一些依赖忘记安装，或者版本不兼容的问题。而且，使用 百度 搜索出来的又千篇一律抄来抄去根本不具有什么参考价值。所以，我想到了使用别人写好的shell来安装。经过别人的推荐我知道了 lamp.sh lamp.sh 是一款使用 Linux Shell 编写的可以在多种系统上运行的 LAMP(Linux + Ap">
+<meta name="twitter:title" content="快速上手umi.js">
+<meta name="twitter:description" content="学习 UmiJS 也有一段时间了，终于了解了大概的用法，这里做个记录，也给刚入门的朋友提供一点参考。 知识图谱：快速上手 UmiJS 实操必要知识   这里我们需要一定的 typescript 和 ES6 的知识 快速上手下载umijs参考官网的说明 环境准备 这里我们假设您本地已经安装好了nodejs 等环境。我们已 AntD Admin 为演示用例 1.下载项目代码：12git clone h">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/12/17Xq56.png">
 
 
 
@@ -122,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://hetaoov.github.io/2020/01/05/修改lamp-sh使之可以支持多版本php/">
+  <link rel="canonical" href="https://hetaoov.github.io/2020/02/12/快速上手umi-js/">
 
 
 
 
 
-  <title>修改lamp.sh使之可以支持多版本PHP | 猛子的博客</title>
+  <title>快速上手umi.js | 猛子的博客</title>
   
 
 
@@ -245,7 +249,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hetaoov.github.io/2020/01/05/修改lamp-sh使之可以支持多版本php/">
+    <link itemprop="mainEntityOfPage" href="https://hetaoov.github.io/2020/02/12/快速上手umi-js/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张大猛子呦">
@@ -262,7 +266,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">修改lamp.sh使之可以支持多版本PHP</h1>
+          <h1 class="post-title" itemprop="name headline">快速上手umi.js</h1>
         
 
         <div class="post-meta">
@@ -274,8 +278,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-05T15:06:09+08:00">
-                2020-01-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-02-12T13:11:23+08:00">
+                2020-02-12
               </time>
             
 
@@ -297,8 +301,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/shell/" itemprop="url" rel="index">
-                    <span itemprop="name">shell</span>
+                  <a href="/categories/JS/" itemprop="url" rel="index">
+                    <span itemprop="name">JS</span>
                   </a>
                 </span>
 
@@ -334,26 +338,20 @@
       
 
       
-        <p>因为公司的新的业务需要安装 PHP7 以上的版本，但是如果自己直接使用源码安装的话，可能会有一些依赖忘记安装，或者版本不兼容的问题。而且，使用 百度 搜索出来的又千篇一律抄来抄去根本不具有什么参考价值。<br>所以，我想到了使用别人写好的shell来安装。经过别人的推荐我知道了 <a href="!https://lamp.sh">lamp.sh</a></p>
-<p>lamp.sh 是一款使用 Linux Shell 编写的可以在多种系统上运行的 LAMP(Linux + Apache + MySQL + PHP) 安装包。</p>
-<p>他有非常多的优点，但有一点是它只允许一种版本的 PHP 在系统上。这个与我的需求有些许的不同。如果直接用它会直接删除我原来的 PHP 版本。于是，我的它源码进行了一些改动，使他只下载新的 PHP 而不删除我原来的版本。</p>
-<p><a href="!https://github.com/hetaoov/lamp">代码地址</a></p>
-<p>使用方法：</p>
-<ul>
-<li><p>下载 lamp</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/hetaoov/lamp.git</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li><p>安装<br>如果你的系统是Amazon Linux/CentOS/Fedora</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yum -y install wget screen git</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/teddysun/lamp.git</span><br><span class="line"><span class="built_in">cd</span> lamp</span><br><span class="line">chmod 755 *.sh</span><br><span class="line">screen -S lamp</span><br><span class="line">./lamp --option_php 1|2|3|4|5|6</span><br></pre></td></tr></table></figure>
-<p>如果你的系统是: Debian/Ubuntu：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yum -y install wget screen git</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/teddysun/lamp.git</span><br><span class="line"><span class="built_in">cd</span> lamp</span><br><span class="line">chmod 755 *.sh</span><br><span class="line">screen -S lamp</span><br><span class="line">./lamp --option_php 1|2|3|4|5|6</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p> 　　上面 1-5对应的 PHP 版本依次为 PHP5.6,PHP7.0,PHP7.1,PHP7.2,PHP7.3；6 为不安装</p>
-<ul>
-<li>安装完的目录<br>安装完成后的默认目录在 /usr/local/php@version 目录下<br>例如：安装的是7.1版本 则对应的目录为 /usr/local/php@71</li>
+        <p>学习 UmiJS 也有一段时间了，终于了解了大概的用法，这里做个记录，也给刚入门的朋友提供一点参考。</p>
+<h2 id="知识图谱："><a href="#知识图谱：" class="headerlink" title="知识图谱："></a>知识图谱：<img src="https://s2.ax1x.com/2020/02/12/17Xq56.png" alt="知识图谱"></h2><h2 id="快速上手-UmiJS-实操"><a href="#快速上手-UmiJS-实操" class="headerlink" title="快速上手 UmiJS 实操"></a>快速上手 UmiJS 实操</h2><h3 id="必要知识"><a href="#必要知识" class="headerlink" title="必要知识"></a>必要知识</h3><p>   这里我们需要一定的 typescript 和 ES6 的知识</p>
+<h3 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h3><h4 id="下载umijs"><a href="#下载umijs" class="headerlink" title="下载umijs"></a>下载umijs</h4><p>参考官网的说明 <a href="https://umijs.org/zh/guide/getting-started.html#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87" target="_blank" rel="noopener">环境准备</a></p>
+<p>这里我们假设您本地已经安装好了nodejs 等环境。<br>我们已 AntD Admin 为演示用例</p>
+<p>1.下载项目代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/zuiidea/antd-admin.git my-project</span><br><span class="line"><span class="built_in">cd</span> my-project</span><br></pre></td></tr></table></figure></p>
+<p>2.进入目录安装依赖：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn install</span><br></pre></td></tr></table></figure></p>
+<p>或者<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<p>3.启动本地服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run start</span><br></pre></td></tr></table></figure></p>
+<p>4.启动完成后打开浏览器访问 <a href="http://localhost:7000" target="_blank" rel="noopener">http://localhost:7000</a>，如果需要更改启动端口，可在 .env 文件中配置。</p>
+<p>启动完成后可以看到如下界面：<br><img src="https://s2.ax1x.com/2020/02/12/1H9pqg.png" alt="1H9pqg.png"><br>输入账号密码： admin   admin<br>就可以看到如下界面：<br><img src="https://s2.ax1x.com/2020/02/12/1H9Gz6.png" alt="1H9Gz6.png"></p>
+<h4 id="目录说明"><a href="#目录说明" class="headerlink" title="目录说明"></a>目录说明</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">├── dist/               # 默认build输出目录</span><br><span class="line">├── mock/               # Mock文件目录</span><br><span class="line">├── public/             # 静态资源文件目录</span><br><span class="line">├── src/                # 源码目录</span><br><span class="line">│ ├── components/       # 组件目录</span><br><span class="line">│ ├── e2e/              # e2e目录</span><br><span class="line">│ ├── layouts/          # 布局目录</span><br><span class="line">│ ├── locales/          # 国际化文件目录</span><br><span class="line">│ ├── models/           # 数据模型目录</span><br><span class="line">│ ├── pages/            # 页面组件目录</span><br><span class="line">│ ├── services/         # 数据接口目录</span><br><span class="line">│ │ ├── api.js          # 接口配置</span><br><span class="line">│ │ └── index.js        # 接口输出</span><br><span class="line">│ ├── themes/           # 项目样式目录</span><br><span class="line">│ │ ├── default.less    # 样式变量</span><br><span class="line">│ │ ├── index.less      # 全局样式</span><br><span class="line">│ │ ├── mixin.less      # 样式函数</span><br><span class="line">│ │ └── vars.less       # 样式变量及函数</span><br><span class="line">│ ├── utils/            # 工具函数目录</span><br><span class="line">│ │ ├── config.js       # 项目配置</span><br><span class="line">│ │ ├── constant.js     # 静态常量</span><br><span class="line">│ │ ├── index.js        # 工具函数</span><br><span class="line">│ │ ├── request.js      # 异步请求函数(axios)</span><br><span class="line">│ │ └── theme.js        # 项目需要在js中使用到样式变量</span><br><span class="line">├── .editorconfig       # 编辑器配置</span><br><span class="line">├── .env                # 环境变量</span><br><span class="line">├── .eslintrc           # ESlint配置</span><br><span class="line">├── .gitignore          # Git忽略文件配置</span><br><span class="line">├── .prettierignore     # Prettier忽略文件配置</span><br><span class="line">├── .prettierrc         # Prettier配置</span><br><span class="line">├── .stylelintrc.json   # Stylelint配置</span><br><span class="line">├── .travis.yml         # Travis配置</span><br><span class="line">└── .umirc.js           # Umi配置</span><br><span class="line">└──  package.json       # 项目信息</span><br></pre></td></tr></table></figure>
+<p>我们主要的目录是在 ~/src/pages 这个目录中。</p>
+<h4 id="写一个商品列表页面"><a href="#写一个商品列表页面" class="headerlink" title="写一个商品列表页面"></a>写一个商品列表页面</h4><ul>
+<li>1  </li>
 </ul>
 
       
@@ -372,9 +370,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/shell/" rel="tag"># shell</a>
+            <a href="/tags/JS/" rel="tag"># JS</a>
           
-            <a href="/tags/lamp/" rel="tag"># lamp</a>
+            <a href="/tags/React/" rel="tag"># React</a>
+          
+            <a href="/tags/umi-js/" rel="tag"># umi.js</a>
           
         </div>
       
@@ -387,8 +387,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/01/05/仿Vue-js实现数据绑定/" rel="next" title="仿Vue.js实现数据绑定">
-                <i class="fa fa-chevron-left"></i> 仿Vue.js实现数据绑定
+              <a href="/2020/01/05/修改lamp-sh使之可以支持多版本php/" rel="next" title="修改lamp.sh使之可以支持多版本PHP">
+                <i class="fa fa-chevron-left"></i> 修改lamp.sh使之可以支持多版本PHP
               </a>
             
           </div>
@@ -397,8 +397,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/02/12/快速上手umi-js/" rel="prev" title="快速上手umi.js">
-                快速上手umi.js <i class="fa fa-chevron-right"></i>
+              <a href="/2020/03/19/php依赖注入容器/" rel="prev" title="php依赖注入容器">
+                php依赖注入容器 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -451,8 +451,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -543,6 +552,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#知识图谱："><span class="nav-number">1.</span> <span class="nav-text">知识图谱：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速上手-UmiJS-实操"><span class="nav-number">2.</span> <span class="nav-text">快速上手 UmiJS 实操</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#必要知识"><span class="nav-number">2.1.</span> <span class="nav-text">必要知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速上手"><span class="nav-number">2.2.</span> <span class="nav-text">快速上手</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#下载umijs"><span class="nav-number">2.2.1.</span> <span class="nav-text">下载umijs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#目录说明"><span class="nav-number">2.2.2.</span> <span class="nav-text">目录说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#写一个商品列表页面"><span class="nav-number">2.2.3.</span> <span class="nav-text">写一个商品列表页面</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
